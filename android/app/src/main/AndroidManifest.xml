@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.teksen.teksen_mobile">
+    package="com.teksenmobile">
    <application
         android:label="teksen_mobile"
         android:icon="@mipmap/ic_launcher">

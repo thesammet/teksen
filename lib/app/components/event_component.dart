@@ -10,7 +10,7 @@ class _EventComponentState extends State<EventComponent> {
   Widget build(BuildContext context) {
     return GestureDetector(
         onTap: () {
-          print("event card tıkalandı.");
+          print("event card pushed.");
         },
         child: Card(child: Text("event card")));
   }

@@ -8,6 +8,11 @@ class UnionView extends StatefulWidget {
 class _UnionViewState extends State<UnionView> {
   @override
   Widget build(BuildContext context) {
-    return Text("union");
+    return Scaffold(
+      body: SafeArea(
+          child: SingleChildScrollView(
+        child: Text("union sayfası"),
+      )),
+    );
   }
 }

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "926628582449",
+    "project_id": "tek-sen",
+    "storage_bucket": "tek-sen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926628582449:android:f3268c5fb6013386577110",
+        "android_client_info": {
+          "package_name": "com.teksenmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926628582449-orm1delq30gg16pqds25rmtddi6ad1dn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE2wJvJfGeFNGY_VCkTSW1KdUTaBlzL20"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926628582449-orm1delq30gg16pqds25rmtddi6ad1dn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
