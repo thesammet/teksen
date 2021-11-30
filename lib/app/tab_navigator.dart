@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:teksen_mobile/app/view/tab_views/announcement_view.dart';
-import 'package:teksen_mobile/app/view/tab_views/events_view.dart';
+import 'package:teksen_mobile/app/view/tab_views/home_page.dart';
 import 'package:teksen_mobile/app/view/tab_views/union_view.dart';
 
 class TabNavigatorRoutes {}
@@ -18,12 +16,9 @@ class _TabNavigatorState extends State<TabNavigator> {
   @override
   Widget build(BuildContext context) {
     Widget child;
-    if (widget.tabItem == "Events")
-      child = EventsView();
-    else if (widget.tabItem == "Announcements")
-      child = AnnouncementsView();
+    if (widget.tabItem == "Home")
+      child = HomeView();
     else if (widget.tabItem == "Union") child = UnionView();
-
     return Navigator(
       key: widget.navigatorKey,
       onGenerateRoute: (routeSettings) {

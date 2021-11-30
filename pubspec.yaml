@@ -52,6 +52,8 @@ dependencies:
   auto_size_text: ^3.0.0
   flutter_native_splash: ^1.2.3
 
+  
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

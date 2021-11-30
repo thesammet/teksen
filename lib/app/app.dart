@@ -8,15 +8,13 @@ class TeksenApp extends StatefulWidget {
 }
 
 class _TeksenAppState extends State<TeksenApp> {
-  String _currentPage = "Events";
+  String _currentPage = "Home";
   List<String> pageKeys = [
-    "Events",
-    "Announcements",
+    "Home",
     "Union",
   ];
   Map<String, GlobalKey<NavigatorState>> _navigatorKeys = {
-    "Events": GlobalKey<NavigatorState>(),
-    "Announcements": GlobalKey<NavigatorState>(),
+    "Home": GlobalKey<NavigatorState>(),
     "Union": GlobalKey<NavigatorState>(),
   };
   int _selectedIndex = 0;
@@ -50,8 +48,7 @@ class _TeksenAppState extends State<TeksenApp> {
       },
       child: Scaffold(
         body: Stack(children: <Widget>[
-          _buildOffstageNavigator("Events"),
-          _buildOffstageNavigator("Announcements"),
+          _buildOffstageNavigator("Home"),
           _buildOffstageNavigator("Union"),
         ]),
         bottomNavigationBar: BottomNavigationBar(
@@ -78,13 +75,8 @@ class _TeksenAppState extends State<TeksenApp> {
             BottomNavigationBarItem(
                 icon: Padding(
                     padding: const EdgeInsets.only(bottom: 2.0),
-                    child: Icon(Icons.local_activity_outlined)),
-                label: "Etkinlikler"),
-            BottomNavigationBarItem(
-                icon: Padding(
-                    padding: const EdgeInsets.only(bottom: 2.0),
-                    child: Icon(Icons.announcement_outlined)),
-                label: "Duyurular"),
+                    child: Icon(Icons.home)),
+                label: "Anasayfa"),
             BottomNavigationBarItem(
                 icon: Padding(
                     padding: const EdgeInsets.only(bottom: 2.0),
