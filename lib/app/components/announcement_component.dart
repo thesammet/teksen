@@ -1,7 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:teksen_mobile/app/view/announcement_detail_view.dart';
+import 'package:teksen_mobile/app/view/other_views/announcement_detail_view.dart';
 
 class AnnouncementComponent extends StatelessWidget {
   final QueryDocumentSnapshot announcementDataList;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:teksen_mobile/app/tab_navigator.dart';
+import 'package:teksen_mobile/app/view/other_views/tab_navigator.dart';
 
 class TeksenApp extends StatefulWidget {
   @override

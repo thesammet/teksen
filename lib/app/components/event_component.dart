@@ -3,7 +3,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:teksen_mobile/app/view/event_detail_view.dart';
+import 'package:teksen_mobile/app/view/other_views/event_detail_view.dart';
 
 class EventComponent extends StatefulWidget {
   const EventComponent({Key key, @required this.eventData}) : super(key: key);

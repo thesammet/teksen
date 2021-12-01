@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:provider/provider.dart';
 import 'package:teksen_mobile/app/services/shared_config.dart';
-import 'package:teksen_mobile/app/app.dart';
+import 'package:teksen_mobile/app/view/other_views/app.dart';
 import 'app/services/theme_manager.dart';
 import 'package:firebase_core/firebase_core.dart';
 
