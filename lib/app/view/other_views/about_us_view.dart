@@ -53,23 +53,18 @@ class _AboutUsViewState extends State<AboutUsView> {
         backgroundColor: Colors.blue.withOpacity(.3),
       ),
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              width: double.infinity,
-              height: MediaQuery.of(context).size.height,
-              decoration: BoxDecoration(
-                  color: Colors.blue.withOpacity(.3),
-                  borderRadius: BorderRadius.circular(7.0)),
-              child: aboutUsText != null
-                  ? Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Text(aboutUsText),
-                    )
-                  : Text("yükleniyor"),
-            ),
-          ),
+        child: Container(
+          width: double.infinity,
+          height: MediaQuery.of(context).size.height,
+          decoration: BoxDecoration(
+              color: Colors.blue.withOpacity(.3),
+              borderRadius: BorderRadius.circular(7.0)),
+          child: aboutUsText != null
+              ? Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: SingleChildScrollView(child: Text(aboutUsText)),
+                )
+              : Text("yükleniyor"),
         ),
       ),
     );

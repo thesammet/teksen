@@ -51,6 +51,7 @@ dependencies:
   url_launcher: ^5.7.10
   auto_size_text: ^3.0.0
   flutter_native_splash: ^1.2.3
+  grouped_list: ^4.1.0
 
   
 

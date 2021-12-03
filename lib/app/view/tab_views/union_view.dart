@@ -67,7 +67,7 @@ class _UnionViewState extends State<UnionView> {
                           context,
                           MaterialPageRoute(
                               builder: (context) =>
-                                  ContractedOrganizationsView()));
+                                  ContactedOrganizationsView()));
                     },
                   ),
                   UnionElementComponent(
