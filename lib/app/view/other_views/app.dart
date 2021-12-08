@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:teksen_mobile/app/view/other_views/tab_navigator.dart';
 
 class TeksenApp extends StatefulWidget {
@@ -56,14 +57,14 @@ class _TeksenAppState extends State<TeksenApp> {
           unselectedIconTheme: IconThemeData(color: const Color(0xff909090)),
           unselectedLabelStyle: TextStyle(
             fontFamily: 'Open Sans',
-            fontSize: 10,
+            fontSize: 12,
             color: const Color(0xff909090),
           ),
           selectedItemColor: const Color(0xff1799cc),
           selectedIconTheme: IconThemeData(color: const Color(0xff1799cc)),
           selectedLabelStyle: TextStyle(
             fontFamily: 'OpenSans-Regular',
-            fontSize: 10,
+            fontSize: 12,
             color: const Color(0xff1799cc),
           ),
 
@@ -74,13 +75,19 @@ class _TeksenAppState extends State<TeksenApp> {
           items: [
             BottomNavigationBarItem(
                 icon: Padding(
-                    padding: const EdgeInsets.only(bottom: 2.0),
-                    child: Icon(Icons.home)),
+                  padding: const EdgeInsets.only(bottom: 2.0),
+                  child: FaIcon(
+                    FontAwesomeIcons.home,
+                  ),
+                ),
                 label: "Anasayfa"),
             BottomNavigationBarItem(
                 icon: Padding(
-                    padding: const EdgeInsets.only(bottom: 2.0),
-                    child: Icon(Icons.info_outline)),
+                  padding: const EdgeInsets.only(bottom: 2.0),
+                  child: FaIcon(
+                    FontAwesomeIcons.infoCircle,
+                  ),
+                ),
                 label: "Sendika"),
           ],
           type: BottomNavigationBarType.fixed,

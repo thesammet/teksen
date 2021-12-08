@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:teksen_mobile/app/view/other_views/about_us_view.dart';
 import 'package:teksen_mobile/app/view/other_views/contact_us.dart';
 import 'package:teksen_mobile/app/view/other_views/contacted_organizations_view.dart';
@@ -41,7 +42,7 @@ class _UnionViewState extends State<UnionView> {
                 children: [
                   UnionElementComponent(
                     elementName: "Hakkımızda",
-                    elementIcon: Icons.surfing,
+                    elementIcon: FontAwesomeIcons.exclamationCircle,
                     func: () {
                       Navigator.push(
                           context,
@@ -51,7 +52,7 @@ class _UnionViewState extends State<UnionView> {
                   ),
                   UnionElementComponent(
                     elementName: "Yönetim Kadrosu",
-                    elementIcon: Icons.surfing,
+                    elementIcon: FontAwesomeIcons.usersCog,
                     func: () {
                       Navigator.push(
                           context,
@@ -61,7 +62,7 @@ class _UnionViewState extends State<UnionView> {
                   ),
                   UnionElementComponent(
                     elementName: "Anlaşmalı Kurumlar",
-                    elementIcon: Icons.surfing,
+                    elementIcon: FontAwesomeIcons.sitemap,
                     func: () {
                       Navigator.push(
                           context,
@@ -72,7 +73,7 @@ class _UnionViewState extends State<UnionView> {
                   ),
                   UnionElementComponent(
                     elementName: "Üyelik Talep Şikayet",
-                    elementIcon: Icons.surfing,
+                    elementIcon: FontAwesomeIcons.mailBulk,
                     func: () {
                       Navigator.push(
                           context,
@@ -82,7 +83,7 @@ class _UnionViewState extends State<UnionView> {
                   ),
                   UnionElementComponent(
                     elementName: "il Başkanları ",
-                    elementIcon: Icons.surfing,
+                    elementIcon: FontAwesomeIcons.chalkboardTeacher,
                     func: () {
                       Navigator.push(
                           context,
@@ -92,7 +93,7 @@ class _UnionViewState extends State<UnionView> {
                   ),
                   UnionElementComponent(
                     elementName: "iletişim",
-                    elementIcon: Icons.surfing,
+                    elementIcon: FontAwesomeIcons.addressCard,
                     func: () {
                       Navigator.push(
                           context,
@@ -128,7 +129,7 @@ class UnionElementComponent extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Icon(
+          FaIcon(
             elementIcon,
             size: 28,
           ),
